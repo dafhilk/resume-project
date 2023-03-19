@@ -5,46 +5,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
     <title>My resume</title>
+
 </head>
 
 <body>
 
     <!-- Wrapper -->
-    <div>
+    <div class="wrapper">
         <!-- Main content -->
-        <div>
+        <div class="main-content">
 
             <!-- About me -->
-            <div>
-                <h2>Front-End Developer</h2>
-                <h1>Taras Goitinskiy</h1>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                    et
-                    dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
-                    accumsan
-                    lacus vel facilisis.</p>
-
+            <div class="about-me-container">
+                <h2 class="my-profession">Front-End Developer</h2>
+                <h1 class="my-name">Olexandr Cherevatenko</h1>
+                <p class="my-descr">Life is not only a straight highway. It has some sharp turns.
+                    Now I try to enter the the turn beautifully
+                    and at the same time stay on the track.</p>
             </div>
 
             <!-- My projects -->
 
-            <div>
-                <h3>Projects</h3>
+            <div class="projects-container">
+                <h3 class="main-content-title">Projects</h3>
 
-                <ol>
-                    <li>
-                        <a href="https://hellen.p.goit.global/">https://hellen.p.goit.global/</a>
-                        ...............[ HTML5, CSS3 ]
+                <ol class="project-list">
+                    <li class="project-item">
+                        <a href="https://hellen.p.goit.global/"
+                            class="project-item-link">https://hellen.p.goit.global/</a>
+                        <span class="project-item-descr">.......................[ HTML5, CSS3 ]</span>
+
                     </li>
-                    <li>
-                        <a href="https://cryptohub.p.goit.global/">https://cryptohub.p.goit.global/</a>
-                        ..............[ JavaScript ]
+                    <li class="project-item">
+                        <a href="https://cryptohub.p.goit.global/"
+                            class="project-item-link">https://cryptohub.p.goit.global/</a>
+                        <span class="project-item-descr">...................[ JavaScript ]</span>
+
                     </li>
-                    <li>
-                        <a href="https://kidslike.p.goit.global/">https://kidslike.p.goit.global/</a>
-                        ...............[ React.js, Node.js ]
+                    <li class="project-item">
+                        <a href="https://kidslike.p.goit.global/"
+                            class="project-item-link">https://kidslike.p.goit.global/</a>
+                        <span class="project-item-descr">............[ React.js, Node.js ]</span>
+
                     </li>
                 </ol>
 
@@ -52,87 +62,122 @@
 
             <!-- Work experience -->
 
-            <div>
-                <h3>Work Experience</h3>
+            <div class="work-experience-container">
+                <h3 class="main-content-title">Work Experience</h3>
 
                 <!-- Company 1 -->
-                <div>
-                    <h4>Front-End Developer Freelance</h4>
-                    <p>September 2019 - up to now | Country</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li>Risus commodo viverra maecenas.</li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</li>
+                <div class="work-experience-place">
+                    <h4 class="work-experience-positin">Airworthiness Management Engineer
+                        <span class="work-experience-company">LLC Cherkasy PANH airlines</span>
+                    </h4>
+                    <p class="work-period">March 2016 - February 2022<span class="text-divider">|</span> Ukraine</p>
+                    <ul class="work-duties-list">
+                        <li class="work-duties">Maintenance of the flight fleet in flying condition.</li>
+                        <li class="work-duties">Maintenance planning.</li>
+                        <li class="work-duties">Performance of routine maintenance.</li>
+                        <li class="work-duties">Resource control and documentation.</li>
                     </ul>
                 </div>
 
                 <!-- Company 2 -->
-                <div>
-                    <h4>Manager Banderogusak & Co.</h4>
-                    <p>March 2015 - October 2018 | Country</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod labore et dolore
-                            magna aliqua.</li>
-                        <li>Quis ipsum suspendisse ultrices gravida.</li>
-                        <li>Risus commodo viverra maecenas.</li>
+                <div class="work-experience-place">
+                    <h4 class="work-experience-positin">Engineer-designer
+                        <span class="work-experience-company">Research Institute PMP KAI.</span>
+                    </h4>
+                    <p class="work-period">August 1991 - February 2014 <span class="text-divider">|</span> Ukraine</p>
+                    <ul class="work-duties-list">
+                        <li class="work-duties">Design of aircraft power plants.</li>
+                        <li class="work-duties">Assembly of prototypes.</li>
+                        <li class="work-duties">Testing of aircraft power plants.</li>
                     </ul>
                 </div>
 
                 <!-- Company 3 -->
-                <div>
-                    <h4>Manager BestUA Corp.</h4>
-                    <p>June 2014 - February 2015 | Country</p>
-                    <ul>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                        <li>Quis ipsum suspendisse ultrices gravida.</li>
-                        <li>Risus commodo viverra maecenas.</li>
+                <div class="work-experience-place">
+                    <h4 class="work-experience-positin">Engineer
+                        <span class="work-experience-company">Baikonur Cosmodrome.</span>
+                    </h4>
+                    <p class="work-period">August 1988 - December 1990 <span class="text-divider">|</span> USSR</p>
+                    <ul class="work-duties-list">
+                        <li class="work-duties">Management of the operation of technological equipment.</li>
+                        <li class="work-duties">Performance of routine maintenance.</li>
+                        <li class="work-duties">Maintenance organization.</li>
                     </ul>
 
                 </div>
             </div>
+
             <!-- education -->
-            <div>
-                <h3>Education</h3>
-                <h4>National University of Management</h4>
-                <h5>Management</h5>
-                <p>September 2009 - June 2014 | Country</p>
+            <div class="education-container">
+                <h3 class="main-content-title">Education</h3>
+                <h4 class="education-school">Kharkov Aviation Institute, Leningrad Military Engineering institute.</h4>
+                <h5 class="education-speciality">Engineering.</h5>
+                <p class="work-period">September 1981 - June 1987 <span class="text-divider">|</span> USSR</p>
 
             </div>
 
         </div>
+
         <!-- Sidebar -->
-        <aside>
-            <img src="./img/(angel)_scaled_90.png" alt="My photo" width="300">
+
+        <aside class="sidebar">
+            <img src="./img/IMG_0694.jpg" alt="My photo" width="370" class="My-photo">
 
             <!-- Contacts -->
-            <div>
-                <h3>Contacts</h3>
-                <p>C: <a href="tel:+388888888888">+38 888 888 88 88</a></p>
-                <p>E: <a href="mailto:t.goitinskiy@gmail.com"> t.goitinskiy@gmail.com</a></p>
+            <div class="contacts-container">
+                <h3 class="sidebar-title">Contacts</h3>
+                <p class="contacts-item">
+                    <span class="contacts-type">C:</span>
+                    <a href="tel:+380955049730" class="contacts-number">+38 095 504 97 30</a>
+                </p>
+                <p class="contacts-item">
+                    <span class="contacts-type">E:</span>
+                    <a href="mailto:alivcher@gmail.com" class="contacts-email">alivcher@gmail.com</a>
+                </p>
             </div>
             <!-- Tech skills -->
-            <div>
-                <h3>Tech Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>GIT</li>
-                    <li>WebPack</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
+            <div class="tech-skills-container">
+                <h3 class="sidebar-title">Tech Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">HTML5</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">CSS3</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">GIT</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">WebPack</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">JavaScript</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">React.js</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">Node.js</span>
+                    </li>
                 </ul>
             </div>
             <!-- Soft Skills -->
-            <div>
-                <h3>Soft Skills</h3>
-                <ul>
-                    <li>Scrum</li>
-                    <li>Agile</li>
-                    <li>GTD</li>
-                    <li>Teamwork</li>
+            <div class="soft-skills-container">
+                <h3 class="sidebar-title">Soft Skills</h3>
+                <ul class="skills-list">
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">Scrum</span>
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">Agile
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">GTD
+                    </li>
+                    <li class="skills-list-item">
+                        <span class="skills-list-text">Teamwork
+                    </li>
                 </ul>
             </div>
         </aside>
